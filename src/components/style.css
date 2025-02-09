@@ -77,3 +77,47 @@ body{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.65);
 }
+
+.carousel-caption h2{
+    font-size:45px;
+    font-weight: 700;
+    line-height: 55px;
+    font-family: "Mulish", serif;
+}
+.carousel-indicators [data-bs-target]{
+    height:15px !important;
+    width:15px !important;
+    border-radius: 100% !important;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.carousel-caption a{
+    background-color: var(--primary);
+    color: var(--white);
+    border:2px solid var(--primary);
+    border-radius: 35px;
+    padding:12px 45px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    margin-left:30px !important;
+}
+
+.carousel-caption a:hover{
+    background-color: transparent;
+    border:2px solid var(--primary);
+}
+
+.carousel-control-prev, .carousel-control-next{
+    padding:15px !important;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color: var(--primary);
+    padding: 15px !important;
+    border-radius: 100%;
+    border:10px solid var(--primary);
+}

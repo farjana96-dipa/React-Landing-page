@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import Header from './components/header.js';
 import Hero from './components/hero.js';
+import About from './components/about.js'
 
 
 function App() {
@@ -13,6 +14,10 @@ function App() {
         <main>
           <Hero></Hero>
         </main>
+
+        <section>
+          <About></About>
+        </section>
 
     </div>
   );
