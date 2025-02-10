@@ -15,29 +15,26 @@ export default class About extends Component {
     return (
      <section id="about" class="block about-block">
         <Container>
-            <div className='about-title'>
-                <h2 className='text-center'>About Us</h2>
+            <div>
+                <h2 className='text-center dptitle'>About Us</h2>
             </div>
-            <div className='about-subtitle'>
-                <p className='text-center'>--Learn More About Us--</p>
+            <div>
+                <p className='text-center dpsubtitle'>--Learn More About Us--</p>
             </div>
             <Row className='py-5'>
                 <Col sm={6}>
                     <Image src={img1} />
                 </Col>
-                <Col sm={6}>
-                <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text, or randomised words which don't look even slightly believable.</p>
-
-                <br />
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                <Col sm={6} className='about-content'>
+                <p className='ptext'>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text, or randomised words which don't look even slightly believable.</p>
 
                 <div className='about-progressbar'>
                     <h4>WordPress Development</h4>
-                    <ProgressBar now={wordpress} label={`${wordpress}%`} />
+                    <ProgressBar now={wordpress} label={`${wordpress}%`} className='prog'/>
                     <h4>HTML, CSS, Javascript</h4>
-                    <ProgressBar now={html} label={`${html}%`} />
+                    <ProgressBar now={html} label={`${html}%`} className='prog' />
                     <h4>PHP, Laravel</h4>
-                    <ProgressBar now={php} label={`${php}%`} />
+                    <ProgressBar now={php} label={`${php}%`} className='prog' />
                 </div>
 
                 </Col>

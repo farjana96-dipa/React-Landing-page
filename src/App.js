@@ -3,20 +3,30 @@ import Button from 'react-bootstrap/Button';
 import Header from './components/header.js';
 import Hero from './components/hero.js';
 import About from './components/about.js'
+import Services  from './components/services.js';
+import Gallery from  './components/gallery.js'
 
 
 function App() {
   return (
     <div className='App'>
       <header>
-        <Header></Header>
+        <Header />
       </header>
         <main>
-          <Hero></Hero>
+          <Hero />
         </main>
 
         <section>
-          <About></About>
+          <About />
+        </section>
+
+        <section>
+          <Services />
+        </section>
+
+        <section>
+          <Gallery />
         </section>
 
     </div>
