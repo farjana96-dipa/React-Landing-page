@@ -98,8 +98,10 @@ export default class gallery extends Component {
                             ))}
 
                 </Row>
-
-                <Pagination className='text-center'>{items}</Pagination>
+                  <div className='pagination1'>
+                  <Pagination className='text-center'>{items}</Pagination>
+                  </div>
+                
             </Container>
      </section>
     )

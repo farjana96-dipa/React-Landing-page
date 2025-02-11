@@ -203,7 +203,10 @@ body{
 
 /*============ Gallery Section ======*/
 #gallery{
-    padding:80px 0px;
+    padding:0px 0px 80px 0px;
+}
+.gallery-text{
+    margin-bottom: 50px;
 }
 
 .portfolio-list img{
@@ -249,4 +252,233 @@ body{
     line-height: 20px;
     text-decoration: none !important;
     color: var(--white) !important;
+}
+.pagination1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active>.page-link, .page-link.active{
+    background-color: var(--primary);
+    border:1px solid var(--primary);
+}
+
+.page-link{
+    color:var(--primary);
+}
+
+/*========== Team Section =========== */
+.team{
+    margin-bottom: 30px;
+    border:1px solid rgba(226, 78, 22, 0.3);
+    cursor: pointer;
+    border-radius: 12px;
+}
+.team_text{
+    margin-bottom: 50px;
+}
+.team_inner{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    width:100%;
+    height:280px;
+    cursor: pointer;
+}
+
+.team_inner img{
+    height:280px;
+    width:100%;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+}
+.teamlabel{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    left:0;
+    bottom: 0;
+    border-radius: 12px 12px 0px 0px;
+    background-color: rgba(226, 78, 22, 0.8);
+    padding:15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    transition: transform 0.7s ease;
+}
+.team:hover .teamlabel{
+    transform: translateY(0);
+}
+.teamlabel .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
+
+.teamlabel .icons i{
+    color:var(--white);
+    font-size: 20px;
+    background-color: var(--white);
+    padding:10px;
+    border-radius: 100%;
+    color:var(--primary);
+}
+.team-text{
+    padding: 15px;
+}
+
+.team-text h3{
+    font-size:25px;
+    line-height: 32px;
+    font-weight: 700;
+    color:var(--black);
+}
+
+.team-text .team-sub{
+    font-size:14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.team-text p{
+    font-size:16px;
+    line-height: 24px;
+    color:var(--black);
+}
+
+/*========= Price Section ======== */
+
+#price{
+    padding:80px 0px;
+}
+.price_text{
+    margin-bottom: 80px;
+}
+.price-table1 thead th{
+    background: var(--black) !important;
+    color: var(--white);
+    font-size:30px;
+    font-weight: 700;
+    line-height: 35px;
+    padding: 15px 0px;
+}
+.price-table2 thead th{
+    background: var(--primary) !important;
+    color: var(--white);
+    font-size:30px;
+    font-weight: 700;
+    line-height: 35px;
+    padding: 15px 0px;
+   
+}
+.price-table2{
+    transform: scale(1.2);
+    margin-bottom: 60px;
+    border:0.5px solid rgba(226, 78, 22, 0.3) !important;
+   
+}
+.price-table3 thead th{
+    background: var(--black) !important;
+    color: var(--white);
+    font-size:30px;
+    font-weight: 700;
+    line-height: 35px;
+    padding: 15px 0px;
+    
+}
+#price button{
+    background-color: var(--primary);
+    color: var(--white);
+    border:2px solid var(--primary);
+    border-radius: 35px;
+    padding:12px 45px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    margin-left:30px !important;
+}
+#price button:hover{
+    background-color: transparent;
+    color: var(--black) !important;
+    border:2px solid var(--primary);
+}
+
+/*============== Contact Section ========= */
+#contact{
+    padding:0px 0px 80px 0px;
+}
+.contact_text{
+    margin-bottom: 50px;
+}
+
+.add-text{
+    padding:30px 0px;
+}
+
+.address{
+    display: flex;
+    align-items: center;
+    gap:12px;
+    margin-bottom: 10px;
+}
+
+.address p{
+    margin-top:12px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color:var(--black);
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+.address p:hover{
+    color:var(--primary);
+}
+.address i{
+    font-size: 18px;
+    background-color: var(--primary);
+    color: var(--white);
+    padding:10px;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.contact-btn{
+    background-color: var(--primary);
+    color: var(--white);
+    border:2px solid var(--primary);
+    border-radius: 35px;
+    padding:12px 120px !important;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+   
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+.contact-btn:hover{
+    background-color: transparent;
+    color: var(--black) !important;
+    border:2px solid var(--primary);
+}
+.contact-form{
+    background-color: var(--white);
+    padding:80px 30px;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.copy{
+    background-color: var(--black);
+    padding:15px 15px 0px 15px;
+}
+
+.copy-text p{
+    color:var(--white) !important;
+    font-size:16px;
+    line-height: 30px;
 }
